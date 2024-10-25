@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protección Jurídica y TIC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos Generales */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Times New Roman', serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .tab-content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Estilo para las pestañas */
+        .nav-tabs {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            border-radius: 20px;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .nav-link:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Estilo del texto */
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Unidad 4: El derecho de la propiedad intelectual y las nuevas tecnologías de la información y comunicación</h2>
+    </header>
+
+    <!-- Menú de Pestañas -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introducción</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="protection-tab" data-toggle="tab" href="#protection" role="tab" aria-controls="protection" aria-selected="false">Protección Jurídica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="implications-tab" data-toggle="tab" href="#implications" role="tab" aria-controls="implications" aria-selected="false">Implicaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cryptography-tab" data-toggle="tab" href="#cryptography" role="tab" aria-controls="cryptography" aria-selected="false">Criptografía</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="industrial-tab" data-toggle="tab" href="#industrial" role="tab" aria-controls="industrial" aria-selected="false">Propiedad Industrial</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="norms-tab" data-toggle="tab" href="#norms" role="tab" aria-controls="norms" aria-selected="false">Normatividad Internacional</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Video de Apoyo</a>
+        </li>
+    </ul>
+
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+            <div class="image-container">
+                <img src="img/inicio.jpg" alt="Descripción de la imagen"> 
+            </div>
+            <p>El derecho de la propiedad intelectual (DPI) juega un papel crucial en la era digital, donde las nuevas tecnologías de la información y comunicación (TIC) transforman la creación y distribución del conocimiento. Este campo legal protege las obras y creaciones de los autores, garantizando su reconocimiento y remuneración. Sin embargo, el auge de internet y las plataformas digitales presenta desafíos únicos, como la reproducción no autorizada de obras. Por lo tanto, es esencial actualizar las normativas para equilibrar la innovación y la protección de los derechos de los creadores en un entorno digital globalizado.</p>
+        </div>
+        <div class="tab-pane fade" id="protection" role="tabpanel" aria-labelledby="protection-tab">
+            <object data="proteccion.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+        <div class="tab-pane fade" id="implications" role="tabpanel" aria-labelledby="implications-tab">
+            <object data="implicaciones.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+        <div class="tab-pane fade" id="cryptography" role="tabpanel" aria-labelledby="cryptography-tab">
+            <object data="criptografia.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+        <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
+            <object data="propiedad.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+        <div class="tab-pane fade" id="norms" role="tabpanel" aria-labelledby="norms-tab">
+            <object data="normatividad.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+            <object data="videos.html" type="text/html" width="100%" height="500px"></object>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

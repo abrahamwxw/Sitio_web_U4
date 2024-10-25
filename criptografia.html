@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif; /* Fuente: Times New Roman */
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .definition {
+            border-left: 10px solid #8e44ad; /* Color de borde para definición */
+        }
+
+        .symmetric {
+            border-left: 10px solid #3498db; /* Color de borde para criptografía simétrica */
+        }
+
+        .asymmetric {
+            border-left: 10px solid #e74c3c; /* Color de borde para criptografía asimétrica */
+        }
+
+        .applications {
+            border-left: 10px solid #f39c12; /* Color de borde para aplicaciones */
+        }
+
+        .legal {
+            border-left: 10px solid #2ecc71; /* Color de borde para legales */
+        }
+
+        .sha256 {
+            border-left: 10px solid #9b59b6; /* Color de borde para SHA-256 */
+            width: 100%;
+            margin-top: 20px; /* Margen superior */
+        }
+
+        h2 {
+            text-align: center;
+            color: #004aad;
+            margin-bottom: 20px; /* Espaciado inferior */
+            margin-top: 20px;
+
+            
+        }
+
+        table {
+            width: 100%; /* Tabla a 100% del contenedor */
+            border-collapse: collapse; /* Colapsar bordes */
+            margin: 10px 0; /* Margen de tablas */
+        }
+
+        th, td {
+            padding: 8px; /* Espacio interno de las celdas */
+            text-align: left; /* Alinear texto a la izquierda */
+            border: 1px solid #dddddd; /* Borde de las celdas */
+        }
+    </style>
+</head>
+<body>
+    <h2>4.3. Criptografía</h2>
+    <div class="container">
+
+
+        <div class="card definition">
+            <img src="img/Criptografía.jpg" alt="Definición de Criptografía">
+            <div class="card-content">
+                <h3>Criptografía</h3>
+                <p>La criptografía es el arte de proteger la información mediante técnicas de cifrado, asegurando la confidencialidad y la integridad de los datos.</p>
+            </div>
+        </div>
+
+        <div class="card symmetric">
+            <img src="img/Criptografía_Simétrica.png" alt="Criptografía Simétrica">
+            <div class="card-content">
+                <h3>Criptografía Simétrica</h3>
+                <p>Utiliza una única clave para cifrar y descifrar datos.</p>
+                <p><strong>Ventajas:</strong> Rápida y eficiente para grandes volúmenes de datos.</p>
+                <p><strong>Desventaja:</strong> La clave debe compartirse de manera segura.</p>
+            </div>
+        </div>
+
+        <div class="card asymmetric">
+            <img src="img/Criptografia_Asimetrica.jpg" alt="Criptografía Asimétrica">
+            <div class="card-content">
+                <h3>Criptografía Asimétrica</h3>
+                <p>Utiliza un par de claves: una pública y una privada.</p>
+                <p><strong>Ventajas:</strong> Permite un intercambio seguro sin compartir la clave privada.</p>
+                <p><strong>Desventaja:</strong> Más lenta que la criptografía simétrica.</p>
+            </div>
+        </div>
+
+        <div class="card applications">
+            <img src="img/Aplicaciones.jpg" alt="Aplicaciones">
+            <div class="card-content">
+                <h3>Aplicaciones</h3>
+                <p>Se utiliza en transacciones en línea, comunicaciones seguras y almacenamiento de datos sensibles.</p>
+            </div>
+        </div>
+
+        <div class="card legal">
+            <img src="img/Legales.jpg" alt="Consideraciones Legales">
+            <div class="card-content">
+                <h3>Consideraciones Legales</h3>
+                <p>Las regulaciones sobre criptografía varían según el país, afectando su uso y exportación.</p>
+                <p>Es importante adoptar estándares internacionales para garantizar la seguridad en las comunicaciones.</p>
+            </div>
+        </div>
+
+        <div class="card sha256">
+            <h2>SHA-256 (Secure Hash Algorithm 256-bit)</h2>
+            <p>
+                SHA-256 es un algoritmo criptográfico que pertenece a la familia de funciones hash diseñadas por la Agencia de Seguridad Nacional de los Estados Unidos (NSA) y publicado por el Instituto Nacional de Estándares y Tecnología (NIST).
+            </p>
+
+            <h3>Características de SHA-256</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tamaño de Salida</td>
+                        <td>Genera un hash de 256 bits (32 bytes), representado en formato hexadecimal como una cadena de 64 caracteres.</td>
+                    </tr>
+                    <tr>
+                        <td>Determinístico</td>
+                        <td>Para una entrada dada, el hash resultante siempre será el mismo.</td>
+                    </tr>
+                    <tr>
+                        <td>Unidireccional</td>
+                        <td>No es posible revertir un hash SHA-256 para obtener la entrada original, útil para almacenar contraseñas y datos sensibles.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistente a Colisiones</td>
+                        <td>Extremadamente difícil encontrar dos entradas diferentes que produzcan el mismo hash, proporcionando integridad a los datos.</td>
+                    </tr>
+                    <tr>
+                        <td>Rápido</td>
+                        <td>Aunque más lento que algunos algoritmos de hash más simples, sigue siendo eficiente y rápido en la mayoría de los entornos computacionales.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Aplicaciones de SHA-256</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aplicaciones</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seguridad de Contraseñas</td>
+                        <td>Se utiliza para almacenar contraseñas de manera segura, guardando su hash en lugar de texto claro.</td>
+                    </tr>
+                    <tr>
+                        <td>Integridad de Datos</td>
+                        <td>Verifica la integridad de los datos en transferencias y almacenamiento mediante la comparación de hashes.</td>
+                    </tr>
+                    <tr>
+                        <td>Criptomonedas</td>
+                        <td>Ampliamente utilizado en criptomonedas como Bitcoin para asegurar transacciones y en el proceso de minería.</td>
+                    </tr>
+                    <tr>
+                        <td>Firmas Digitales</td>
+                        <td>Se utiliza en la creación de firmas digitales, verificando la autenticidad e integridad de un mensaje o documento.</td>
+                    </tr>
+                    <tr>
+                        <td>Certificados SSL/TLS</td>
+                        <td>Utilizado en la creación de certificados SSL/TLS para asegurar conexiones seguras en la web.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
